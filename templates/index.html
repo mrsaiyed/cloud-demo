@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UHS NSM Enrollment</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    h1 { text-align: center; color: red; }
+    h2 { margin-top: 2rem; }
+    ul { list-style: disc; margin-left: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>University of Houston System</h1>
+  <h2>Students enrolled in NSM:</h2>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.name }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
